@@ -1,0 +1,316 @@
+html, body {
+    /*width: auto !important;*/
+    font-family: 'Roboto', sans-serif;
+    background-color: #181818;
+    color: white;
+    /*iphone 5 extra margin right*/
+}
+
+div#portfolio.row {
+    width: auto !important;
+}
+
+button {
+    margin-top: 20px;
+    color: white;
+    background-color: #ff0000;
+}
+
+.inputType {
+    max-width: 50%;
+    margin-top: 16px;
+    border-color: #181818;
+    background-color: #393939;
+}
+
+h1 {
+    color: white;
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 15px;
+    margin: 0 0 0 4px;
+
+}
+
+h3 {
+    line-height: 1.1;
+    letter-spacing: 5px;
+    margin: 0 0 0 4px;
+
+}
+
+#name {
+    padding-top: 55px;
+    padding-left: 16px;
+    padding-right: 16px;
+    float: right;
+}
+
+#profession {
+    color: #777777;
+    padding-left: 16px;
+    padding-right: 28px;
+    float: right;
+    clear: right;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/myphoto_back.png");
+    /*background: url("../img/universe.jpg");*/
+    /* Set a specific height */
+    min-height: 550px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-color: #070606;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+nav {
+    background-color: #282828;
+}
+
+#arrow:after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    margin-bottom: -8px;
+    margin-left: -45px;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 35px solid #282828;
+}
+
+.navbar-brand {
+    margin-bottom: 10px;
+}
+
+ul#ulNavBar li {
+    margin-bottom: -8px;
+}
+
+.textshadow {
+    color: transparent;
+    text-shadow: 5px 5px 0 #eee, 7px 7px 0 #707070;
+}
+
+#hobbiesBack {
+    height: 562px;
+    background: url("../img/counter_strike.jpg") center;
+    background-size: cover;
+}
+
+#hobbiesContainer {
+    height: 50%;
+    margin-top: 65px;
+    min-height: 50%;
+    width: 240px;
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    border: 2px solid white;
+    background-color: #ff0000;
+    opacity: 0.65;
+
+}
+
+#hobbiesContainer.h3 {
+    vertical-align: middle;
+    line-height: 50;
+    display: inline-block;
+}
+
+.whiteText {
+    color: white;
+}
+
+.blackText {
+    color: black;
+}
+
+#contactMe {
+    margin: 65px 0 0 60px;
+}
+
+.left4 {
+    padding-left: 4px;
+}
+
+.floatL {
+    float: left;
+}
+
+.clearL {
+    clear: left;
+}
+
+
+.hexagon {
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+    /*cursor: pointer;*/
+}
+
+.hexagon-in1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.hexagon-in2 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center;
+    background-size: 120%;
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.hexagon-in2BackNone {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.hexagon1 {
+    width: 400px;
+    height: 200px;
+    margin: 0 0 0 -80px;
+}
+
+.hexagon2 {
+    width: 200px;
+    height: 400px;
+    margin: -212px 0 0 16px;
+
+    /*should be change in small device as -160px 0 0 16px*/
+}
+
+.portfolioImage1:hover, .portfolioImage2:hover, .portfolioImage3:hover,
+.portfolioImage5:hover, .portfolioImage6:hover,
+.portfolioImage7:hover, .portfolioImage8:hover, .portfolioImage9:hover,
+.portfolioImage10:hover, .portfolioImage11:hover {
+    transition: background-image 0.55s ease-in-out;
+    -moz-transition: background-image 0.55s ease-in-out;
+    -webkit-transition: background-image 0.55s ease-in-out;
+}
+
+.portfolioImage1 {
+    background-image: url('../img/attendanceApp_desaturate.jpg');
+    background-size: contain;
+}
+
+.portfolioImage1:hover {
+    background-image: url('../img/attendanceApp.jpg');
+}
+
+.portfolioImage2 {
+    background-image: url('../img/adhoc_desaturate.jpg');
+    background-size: 40%;
+}
+
+.portfolioImage2:hover {
+    background-image: url('../img/adhoc.jpg');
+}
+
+.portfolioImage3 {
+    background-image: url('../img/transcendence_desaturate.jpg');
+    background-size: contain;
+}
+
+.portfolioImage3:hover {
+    background-image: url('../img/transcendence.jpg');
+}
+
+.portfolioImage4 {
+    background-image: url('../img/pyout.jpg');
+}
+
+.portfolioImage5 {
+    background-image: url('../img/vaahika.png');
+    background-color: #393939;
+    background-size: auto;
+}
+
+.portfolioImage5:hover {
+    background-color: #336699;
+}
+
+.portfolioImage6 {
+    background-image: url('../img/myphoto_medium_desaturate.jpg');
+}
+
+.portfolioImage6:hover {
+    background-image: url('../img/myphoto_medium.jpg');
+}
+
+.portfolioImage7 {
+    background-image: url('../img/kido_desaturate.jpg');
+    background-size: contain;
+}
+
+.portfolioImage7:hover {
+    background-image: url('../img/kido.jpg');
+}
+
+.portfolioImage8 {
+    background-image: url('../img/sggroup_desaturate.jpg');
+}
+
+.portfolioImage8:hover {
+    background-image: url('../img/sggroup.jpg');
+}
+
+.portfolioImage9 {
+    background-image: url('../img/tributePage_desaturate.jpg');
+}
+
+.portfolioImage9:hover {
+    background-image: url('../img/tributePage.jpg');
+}
+
+.portfolioImage10 {
+    background-image: url('../img/empty_desaturate.jpg');
+}
+
+.portfolioImage10:hover {
+    background-image: url('../img/empty.jpg');
+}
+
+.portfolioImage11 {
+    background-image: url('../img/empty_desaturate.jpg');
+}
+
+.portfolioImage11:hover {
+    background-image: url('../img/empty.jpg');
+}
+
+
+
+
+
+
