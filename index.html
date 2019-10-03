@@ -35,10 +35,11 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="col-md-2"></div>
             <div class="navbar-nav">
-                <a class="nav-item nav-link mr-4" href="#about">About</a>
-                <a class="nav-item nav-link mr-4" href="#">Blog</a>
-                <a class="nav-item nav-link mr-4" href="#contact">Contact</a>
-                <a class="nav-item nav-link mr-4" href="#hobbies">Hobbies</a>
+                <a class="nav-item nav-link ml-4" href="#about">About</a>
+                <a class="nav-item nav-link ml-4" href="#hobbies">Hobbies</a>
+                <a class="nav-item nav-link ml-4" href="#projects">Projects</a>
+                <a class="nav-item nav-link ml-4" href="#contact">Contact</a>
+                <a class="nav-item nav-link ml-4" href="#">Blog</a>
             </div>
             <div class="col-md-2"></div>
         </div>
@@ -57,7 +58,7 @@
                 <div class="row is-split-50-50">
                     <div class="col-6 offset-3">
                         <div class="name-container">
-                            <p><b>Preetam Swami</b> — Gamer</p>
+                            <p><b>Preetam Swami</b> — SDE at <i>Cargill</i></p>
                         </div>
                         <img class="img-fluid" src="images/me.jpg" alt="Preetam Swami">
 
@@ -84,20 +85,17 @@
             <div class="col-md-4 grey-back-color pl-4 pr-4">
                 <p class="red-light-color caps" style="padding-top: 40px;">HOBBIES</p>
                 <h2 class="mt-4">Gaming</h2>
-                <p class="mt-5">Love to play third person shooting games, </p>
+                <p class="mt-5">Love to play third person shooting, action-adventure games</p>
                 <p class="mt-5"></p>
             </div>
             <div class="col-md-6 grey-back-color">
-                <div class="row" id="hobbiesBack">
-                    <div id="hobbiesContainer" class="text-center">
-                    </div>
-                </div>
+                <img src="images/csgo.jpg" class="img-fluid" alt="CS GO">
             </div>
             <div class="col-md-1"></div>
         </div>
     </div>
 
-    <div class="container ptb-96">
+    <div class="container ptb-96" id="projects">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2 class="red-light-color">PROJECTS</h2>
@@ -163,105 +161,101 @@
 
                 <div id="coder" class="coder text-center">
                     <h1>&lt;coder&gt;</h1>
-                    <p class="mt-2">FullStack Engineer who enjoys writing efficient code, system designing and learning
+                    <p class="mt-2">FullStack Engineer who enjoys writing efficient code, working on system design and learning
                         amazing technologies.</p>
                 </div>
 
                 <img class="img-fluid tog-img mt-3" src="images/tug-of-war.jpg" alt="designer/coder">
                 <img class="img-fluid designer-img mt-3" src="images/tog_right.png" alt="designer/coder">
                 <img class="img-fluid coder-img mt-3" src="images/tog_left.png" alt="designer/coder">
-
-
-
-
             </div>
         </div>
 
+    </div>
 
 
 
 
-
-        <!-- Le javascript
+    <!-- Le javascript
     ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <!-- Required by Bootstrap v4.3.1 -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        <script>
-            var initialPosDesigner = -1;
-            var initialPosCoder = -1;
-            $(document).ready(function () {
-                $('#designer').on('mousemove', function (e) {
-                    var relMouseX = e.pageX - this.offsetLeft;
-                    var displacement = relMouseX - initialPosDesigner;
-                    if (displacement > 20) {
-                        displacement = 1;
-                    }
-                    var coder_img = $('.coder-img');
-                    var tog_img = $('.tog-img');
-                    tog_img.css('opacity', .5);
-                    coder_img.css('opacity', .5);
-                    coder_img.css('left', '+=' + displacement / 3);
-                    tog_img.css('left', '+=' + displacement / 3.6);
-                    // if (relMouseX < initialPosDesigner) {
-                    //     // mouse left side
-                    //     // var is_left = (e.pageX - this.offsetLeft) < $(this).width() / 2;
-                    // } else if (relMouseX > initialPosDesigner) {
-                    //     //mouse right side
-                    // }
-                    initialPosDesigner = relMouseX;
-                });
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Required by Bootstrap v4.3.1 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        var initialPosDesigner = -1;
+        var initialPosCoder = -1;
+        $(document).ready(function () {
+            $('#designer').on('mousemove', function (e) {
+                var relMouseX = e.pageX - this.offsetLeft;
+                var displacement = relMouseX - initialPosDesigner;
+                if (displacement > 20) {
+                    displacement = 1;
+                }
+                var coder_img = $('.coder-img');
+                var tog_img = $('.tog-img');
+                tog_img.css('opacity', .5);
+                coder_img.css('opacity', .5);
+                coder_img.css('left', '+=' + displacement / 3);
+                tog_img.css('left', '+=' + displacement / 3.6);
+                // if (relMouseX < initialPosDesigner) {
+                //     // mouse left side
+                //     // var is_left = (e.pageX - this.offsetLeft) < $(this).width() / 2;
+                // } else if (relMouseX > initialPosDesigner) {
+                //     //mouse right side
+                // }
+                initialPosDesigner = relMouseX;
+            });
 
-                $('#designer').on('mouseleave', function (e) {
-                    initialPosDesigner = -1;
-                    var coder_img = $('.coder-img');
-                    var tog_img = $('.tog-img');
-                    tog_img.css('left', 0);
-                    tog_img.css('opacity', 1);
-                    coder_img.css('left', "-1px");
-                    coder_img.css('opacity', 0);
-                });
+            $('#designer').on('mouseleave', function (e) {
+                initialPosDesigner = -1;
+                var coder_img = $('.coder-img');
+                var tog_img = $('.tog-img');
+                tog_img.css('left', 0);
+                tog_img.css('opacity', 1);
+                coder_img.css('left', "-1px");
+                coder_img.css('opacity', 0);
+            });
 
-                $('#coder').on('mousemove', function (e) {
-                    var relMouseX = e.pageX - this.offsetLeft;
-                    var displacement = relMouseX - initialPosCoder;
-                    if (displacement > 20) {
-                        displacement = 1;
-                    }
-                    var designer_img = $('.designer-img');
-                    var tog_img = $('.tog-img');
-                    tog_img.css('opacity', .5);
-                    designer_img.css('opacity', .5);
-                    // designer_img.css('left', '+=' + displacement / 3);
-                    tog_img.css('left', '+=' + displacement / 8);
-                    // if (relMouseX < initialPosCoder) {
-                    //     // mouse left side
-                    //     // var is_left = (e.pageX - this.offsetLeft) < $(this).width() / 2;
-                    // } else if (relMouseX > initialPosCoder) {
-                    //     //mouse right side
-                    // }
-                    initialPosCoder = relMouseX;
-
-                });
-                $('#coder').on('mouseleave', function (e) {
-                    initialPosCoder = -1;
-                    var designer_img = $('.designer-img');
-                    var tog_img = $('.tog-img');
-                    tog_img.css('left', 0);
-                    tog_img.css('opacity', 1);
-                    designer_img.css('left', "1px");
-                    designer_img.css('opacity', 0);
-                });
+            $('#coder').on('mousemove', function (e) {
+                var relMouseX = e.pageX - this.offsetLeft;
+                var displacement = relMouseX - initialPosCoder;
+                if (displacement > 20) {
+                    displacement = 1;
+                }
+                var designer_img = $('.designer-img');
+                var tog_img = $('.tog-img');
+                tog_img.css('opacity', .5);
+                designer_img.css('opacity', .5);
+                // designer_img.css('left', '+=' + displacement / 3);
+                tog_img.css('left', '+=' + displacement / 8);
+                // if (relMouseX < initialPosCoder) {
+                //     // mouse left side
+                //     // var is_left = (e.pageX - this.offsetLeft) < $(this).width() / 2;
+                // } else if (relMouseX > initialPosCoder) {
+                //     //mouse right side
+                // }
+                initialPosCoder = relMouseX;
 
             });
-        </script>
+            $('#coder').on('mouseleave', function (e) {
+                initialPosCoder = -1;
+                var designer_img = $('.designer-img');
+                var tog_img = $('.tog-img');
+                tog_img.css('left', 0);
+                tog_img.css('opacity', 1);
+                designer_img.css('left', "1px");
+                designer_img.css('opacity', 0);
+            });
+
+        });
+    </script>
 </body>
 
 </html>

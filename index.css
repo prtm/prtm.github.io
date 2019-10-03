@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: white;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, .h1, .h2, .h3, .h4, .title {
@@ -85,12 +86,6 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4, .title {
     height: 84px;
 }
 
-#hobbiesBack {
-    height: 562px;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/csgo.jpg) center;
-    background-size: cover;
-}
-
 .designer {
     position: absolute;
     left: 0px;
@@ -144,7 +139,6 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4, .title {
 .img-hover-zoom img {
     transition: transform .5s ease;
     filter: grayscale(100%);
-    filter: blur(1px);
 }
 
 .img-hover-zoom:hover img {
@@ -152,5 +146,4 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4, .title {
     -webkit-transform: scale(1.1) translateY(-5%);
     transform: scale(1.1) translateY(-5%);
     filter: grayscale(0);
-    filter: blur(0);
 }
