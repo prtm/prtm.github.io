@@ -91,7 +91,6 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4, .title {
     background-size: cover;
 }
 
-
 .designer {
     position: absolute;
     left: 0px;
@@ -111,6 +110,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4, .title {
     max-width: 50%;
     height: 600px;
 }
+
 .tog-img {
     position: absolute;
     left: 0px;
@@ -132,4 +132,25 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4, .title {
     top: 0px;
     z-index: -1;
     opacity: 0;
+}
+
+.img-hover-zoom {
+    height: 300px;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+    filter: grayscale(100%);
+    filter: blur(1px);
+}
+
+.img-hover-zoom:hover img {
+    -ms-transform: scale(1.1) translateY(-5%);
+    -webkit-transform: scale(1.1) translateY(-5%);
+    transform: scale(1.1) translateY(-5%);
+    filter: grayscale(0);
+    filter: blur(0);
 }
